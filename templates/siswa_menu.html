@@ -1,9 +1,0 @@
-<h2>Selamat datang, {{ nama }}</h2>
-<ul>
-  {% if nama in registered_names and pendaftar_nama_list and nama not in pendaftar_nama_list %}
-    <li><a href="/daftar">Daftar Sekarang</a></li>
-  {% elif nama not in pendaftar_nama_list %}
-    <li><a href="/daftar">Daftar Sekarang</a></li>
-  {% endif %}
-  <li><a href="/simulasi">Simulasi Nilai</a></li>
-</ul>
